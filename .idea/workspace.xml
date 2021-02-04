@@ -20,12 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="839ae370-b898-4427-80a3-c2426594545d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OnlineStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OnlineStore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/view/LoginPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/view/MainFrame.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SqlServerConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SqlServerConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,9 +127,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612425717580" />
-    <state x="292" y="0" key="SettingsEditor" timestamp="1612377914292">
+    <state x="292" y="0" key="SettingsEditor" timestamp="1612437147175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="292" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612377914292" />
+    <state x="292" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612437147175" />
   </component>
 </project>
