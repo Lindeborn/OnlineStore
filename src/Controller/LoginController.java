@@ -9,6 +9,9 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
 public class LoginController {
 
 
@@ -20,7 +23,7 @@ public class LoginController {
 
 
 
-    public void loginButtonAction(ActionEvent actionEvent) {
+    public void loginButtonAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
         if (usernameTxtF.getText().isBlank() == false && passwordTxF.getText().isBlank() == false) {
             validateLogin();
         } else {
@@ -28,8 +31,9 @@ public class LoginController {
         }
     }
 
-        public void validateLogin(){
-
+        public void validateLogin() throws SQLException, ClassNotFoundException {
+        SqlServerConnection connectionNow = new SqlServerConnection();
+            Connection connectionDB = connectionNow.connect();
 
     }
 }
