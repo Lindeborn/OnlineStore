@@ -8,24 +8,23 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
    <children>
       <Pane prefHeight="400.0" prefWidth="173.0" style="-fx-background-color: lightblue;" />
-      <TextField layoutX="191.0" layoutY="120.0" promptText="Firstname" />
-      <TextField layoutX="191.0" layoutY="163.0" promptText="E-mail" />
-      <TextField layoutX="380.0" layoutY="207.0" promptText="City" />
-      <TextField layoutX="191.0" layoutY="248.0" promptText="Phonenumber" />
-      <TextField layoutX="380.0" layoutY="120.0" promptText="Lastname" />
-      <TextField layoutX="380.0" layoutY="163.0" promptText="Address" />
-      <TextField layoutX="380.0" layoutY="248.0" promptText="Password" />
-      <ComboBox layoutX="191.0" layoutY="207.0" prefHeight="27.0" prefWidth="161.0" promptText="Country" />
+      <TextField fx:id="firstnameTextfield" layoutX="191.0" layoutY="120.0" promptText="Firstname" />
+      <TextField fx:id="mailTextfield" layoutX="191.0" layoutY="163.0" promptText="E-mail" />
+      <TextField fx:id="cityTextfield" layoutX="380.0" layoutY="207.0" promptText="City" />
+      <TextField fx:id="numberTextfield" layoutX="191.0" layoutY="248.0" promptText="Phonenumber" />
+      <TextField fx:id="lastnameTextfield" layoutX="380.0" layoutY="120.0" promptText="Lastname" />
+      <TextField fx:id="addressTextfield" layoutX="380.0" layoutY="163.0" promptText="Address" />
+      <TextField fx:id="passwordTextfield" layoutX="380.0" layoutY="248.0" promptText="Password" />
+      <ComboBox fx:id="countryCombobox" layoutX="191.0" layoutY="207.0" prefHeight="27.0" prefWidth="161.0" promptText="Country" />
       <Label layoutX="191.0" layoutY="44.0" prefHeight="55.0" prefWidth="181.0" text="Register" textFill="#49adeb">
          <font>
             <Font size="26.0" />
          </font>
       </Label>
-      <Button layoutX="417.0" layoutY="313.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: lightgreen;" text="Register" />
+      <Button fx:id="registerButton" layoutX="417.0" layoutY="313.0" mnemonicParsing="false" onAction="#registerActionEvent" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: lightgreen;" text="Register" />
       <Button layoutX="229.0" layoutY="313.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: lightgrey;" text="Cler all" />
    </children>
 </AnchorPane>
