@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="839ae370-b898-4427-80a3-c2426594545d" name="Default Changelist" comment="" />
+    <list default="true" id="839ae370-b898-4427-80a3-c2426594545d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/RegisterNewCostumer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/RegisterNewCostumer.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
