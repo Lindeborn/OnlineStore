@@ -60,7 +60,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.Main" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$PROJECT_DIR$/../../../../Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />
