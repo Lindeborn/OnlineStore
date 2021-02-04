@@ -11,12 +11,14 @@ public class SqlServerConnection {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String dbURL = "jdbc:sqlserver://localhost";
 
-        String user = "StoreAdmin";
-        String password = "password123";
+        String user = "Manna";
+        String password = "admin";
 
         Connection connection = DriverManager.getConnection(dbURL, user, password);
         if (connection != null) {
             System.out.println("connected");
+
+            System.out.println("test");
             return connection;
         }
 
