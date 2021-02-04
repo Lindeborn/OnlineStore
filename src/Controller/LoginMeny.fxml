@@ -24,6 +24,6 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="forgotPasswordBTN" layoutX="216.0" layoutY="234.0" onMouseClicked="#forgotPsw" prefHeight="27.0" prefWidth="101.0" style="-fx-background-color: lightgrey;" text="Forgot password?" />
+      <Label fx:id="forgotPasswordBTN" layoutX="216.0" layoutY="234.0" prefHeight="27.0" prefWidth="101.0" style="-fx-background-color: lightgrey;" text="Forgot password?" />
    </children>
 </AnchorPane>

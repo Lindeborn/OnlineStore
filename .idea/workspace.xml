@@ -22,9 +22,6 @@
     <list default="true" id="839ae370-b898-4427-80a3-c2426594545d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/OnlineStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OnlineStore.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Controller/LoginMeny.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Controller/LoginMeny.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Controller/SqlServerConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Controller/SqlServerConnection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mssql-jdbc-9.2.0.jre15.jar!/" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -63,7 +60,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.Main" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />
@@ -98,7 +95,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -123,43 +120,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1612438010334">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1612438010334" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612442370073">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1612442370073" />
-    <state x="499" y="167" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1612441793093">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="167" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1612441793093" />
-    <state x="473" y="153" key="FileChooserDialogImpl" timestamp="1612440180583">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="473" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1612440180583" />
-    <state width="1493" height="135" key="GridCell.Tab.0.bottom" timestamp="1612441497505">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612441497505" />
-    <state width="1493" height="135" key="GridCell.Tab.0.center" timestamp="1612441497504">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612441497504" />
-    <state width="1493" height="135" key="GridCell.Tab.0.left" timestamp="1612441497504">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612441497504" />
-    <state width="1493" height="135" key="GridCell.Tab.0.right" timestamp="1612441497505">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612441497505" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1612442835924">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612442835924" />
   </component>
 </project>
