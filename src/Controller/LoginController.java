@@ -25,7 +25,7 @@ public class LoginController {
 
 
     public void loginButtonAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
-        if (usernameTxtF.getText().isBlank() == false && passwordTxF.getText().isBlank() == false) {
+        if (!usernameTxtF.getText().isBlank() && !passwordTxF.getText().isBlank()) {
             validateLogin();
             //loginMessageLabel.setText("login");
         } else {
@@ -37,7 +37,7 @@ public class LoginController {
         SqlServerConnection ConnectNow = new SqlServerConnection();
         Connection connectionDB = ConnectNow.connect();
 
-        String verifyLogin  = "Select " + usernameTxtF.getText() + "pw" + passwordTxF.getText() + "hej";
+        String verifyLogin  = "Select " + usernameTxtF.getText();
 
         try{
             Statement statement = connectionDB.createStatement();
