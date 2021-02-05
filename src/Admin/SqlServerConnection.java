@@ -1,4 +1,4 @@
-package Controller;
+package Admin;
 
 import java.sql.*;
 

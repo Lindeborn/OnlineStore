@@ -20,16 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="802df805-d9f3-41ae-ab51-be65e5ab026d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/LoginCustomer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/LoginCustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Controller/MainCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Controller/MainCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Controller/RegisterNewCostumer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Controller/RegisterNewCostumer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Controller/SqlServerConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Controller/SqlServerConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/LoginCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/LoginCustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginMeny.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/LoginMeny.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/MainAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/MainCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProductPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/ProductPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterNewCostumer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/RegisterNewCostumer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SqlServerConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/SqlServerConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/customer" />
       <recent name="$PROJECT_DIR$/src/Controller" />
     </key>
   </component>
@@ -73,7 +75,7 @@
       <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$PROJECT_DIR$/../../../../Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +84,12 @@
       </method>
     </configuration>
     <configuration name="MainCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Controller.MainCustomer" />
+      <option name="MAIN_CLASS_NAME" value="customer.MainCustomer" />
       <module name="OnlineStore" />
       <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,11 +98,11 @@
       </method>
     </configuration>
     <configuration name="SqlServerConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Controller.SqlServerConnection" />
+      <option name="MAIN_CLASS_NAME" value="Admin.SqlServerConnection" />
       <module name="OnlineStore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
