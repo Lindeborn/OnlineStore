@@ -13,19 +13,19 @@
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="129.0" style="-fx-background-color: lightblue;" />
       <Button fx:id="signinBTN" layoutX="226.0" layoutY="274.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: lightgreen;" text="SIGN IN" />
       <PasswordField fx:id="passwordTxF" layoutX="215.0" layoutY="200.0" prefHeight="27.0" prefWidth="190.0" promptText="Password" />
-      <Label layoutX="211.0" layoutY="67.0" prefHeight="52.0" prefWidth="169.0" text="Welcome">
+      <Label layoutX="209.0" layoutY="67.0" prefHeight="52.0" prefWidth="246.0" text="Welcome">
          <font>
             <Font size="42.0" />
          </font>
       </Label>
       <TextField fx:id="usernameTxtF" layoutX="215.0" layoutY="166.0" prefHeight="27.0" prefWidth="190.0" promptText="Username" />
-      <Label layoutX="215.0" layoutY="119.0" prefHeight="27.0" prefWidth="161.0" text="Sign in to continue" textOverrun="CLIP">
+      <Label layoutX="215.0" layoutY="119.0" prefHeight="27.0" prefWidth="190.0" text="Sign in to continue" textOverrun="CLIP">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
       <Button fx:id="cancelBTN" layoutX="226.0" layoutY="313.0" mnemonicParsing="false" onAction="#CancelButtonAction" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: lightgreen;" text="Cancel" />
-      <Label fx:id="loginMessageLabel" layoutX="230.0" layoutY="236.0" prefHeight="0.0" prefWidth="161.0" text="Try to login" textOverrun="CLIP">
+      <Label fx:id="loginMessageLabel" layoutX="230.0" layoutY="236.0" prefHeight="0.0" prefWidth="161.0" style="-fx-background-color: lightgrey;" text="Try to login" textOverrun="CLIP">
          <font>
             <Font size="14.0" />
          </font>
