@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -57,9 +58,13 @@ public class LoginCustomerController {
 
     }
     public void createAccountForm(ActionEvent event) throws IOException {
-            Parent tableView = FXMLLoader.load(getClass().getResource("RegisterNewCustomer.fxml"));
-            JFXPanel primaryStage = new JFXPanel();
-            primaryStage.setScene(new Scene(tableView, 500, 400));
-            primaryStage.show();
+        Scene scenes = newCustomerButton.getScene();
+        Window window = scenes.getWindow();
+        Stage stages = (Stage) window;
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("RegisterNewCostumer.fxml")); // create and load() view
+        Stage stage = (Stage) newCustomerButton.getScene().getWindow();
+        Scene scene = new Scene(loader.getRoot());
+        stage.setScene(scene);
     }
 }
