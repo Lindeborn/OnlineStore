@@ -25,6 +25,6 @@
          </font>
       </Label>
       <Button fx:id="registerButton" layoutX="417.0" layoutY="313.0" mnemonicParsing="false" onAction="#registerActionEvent" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: lightgreen;" text="Register" />
-      <Button layoutX="229.0" layoutY="313.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: lightgrey;" text="Cler all" />
+      <Button fx:id="clearAllBTN" layoutX="229.0" layoutY="313.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: lightgrey;" text="Cler all" />
    </children>
 </AnchorPane>

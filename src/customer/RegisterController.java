@@ -4,6 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
+import java.sql.SQLException;
+
+
 public class RegisterController {
     @FXML
     public Button registerButton;
@@ -29,10 +32,19 @@ public class RegisterController {
     public Label newUserLBL;
 
     public Label confirmPWLBL;
+    public LoginCustomerController lgController;
 
+    public RegisterController(LoginCustomerController lgController){
+        this.lgController = lgController;
+    }
 
-    public void registerActionEvent(ActionEvent actionEvent) {
+    public RegisterController() {
+
+    }
+
+    public void registerActionEvent(ActionEvent actionEvent) throws SQLException {
         newUserLBL.setText("User has been registered successfully");
+        lgController.registerCustomer();
         registerUser();
 
     }
