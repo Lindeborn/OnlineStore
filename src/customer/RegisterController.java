@@ -1,4 +1,4 @@
-package Controller;
+package customer;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
