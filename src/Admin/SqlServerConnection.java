@@ -11,8 +11,8 @@ public class SqlServerConnection {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String dbURL = "jdbc:sqlserver://localhost";
 
-        String user = "Manna";
-        String password = "admin";
+        String user = "StoreAdmin";
+        String password = "password123";
 
         Connection connection = DriverManager.getConnection(dbURL, user, password);
         if (connection != null) {
