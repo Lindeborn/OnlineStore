@@ -46,6 +46,7 @@ public class LoginCustomerController {
                 if(queryResult.getInt(1) ==1){
                    createAccountForm();
                     //loginMessageLabel.setText("Congratulations!");
+                    createAccountForm();
                 }else{
                     //loginMessageLabel.setText("Invalid login");
                 }
