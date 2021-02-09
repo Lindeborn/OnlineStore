@@ -1,15 +1,16 @@
 package customer;
 
 import Admin.SqlServerConnection;
+import javafx.embed.swing.JFXPanel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -45,9 +46,7 @@ public class LoginCustomerController {
 
             while(queryResult.next()){
                 if(queryResult.getInt(1) ==1){
-                   createAccountForm();
                     //loginMessageLabel.setText("Congratulations!");
-                    createAccountForm();
                 }else{
                     //loginMessageLabel.setText("Invalid login");
                 }
@@ -57,9 +56,10 @@ public class LoginCustomerController {
         }
 
     }
-    public void createAccountForm() {
-        Scene scene = newCustomerButton.getScene();
-        Window window = scene.getWindow();
-        Stage stage = (Stage) window;
-        }
+    public void createAccountForm(ActionEvent event) throws IOException {
+            Parent tableView = FXMLLoader.load(getClass().getResource("RegisterNewCustomer.fxml"));
+            JFXPanel primaryStage = new JFXPanel();
+            primaryStage.setScene(new Scene(tableView, 500, 400));
+            primaryStage.show();
+    }
 }
