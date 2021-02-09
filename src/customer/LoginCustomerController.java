@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -57,15 +58,8 @@ public class LoginCustomerController {
 
     }
     public void createAccountForm() {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("RegisterNewCustomer.fxml"));
-            Stage registerStage = new Stage();
-            registerStage.setTitle("Hello World");
-            registerStage.setScene(new Scene(root, 500, 400));
-            registerStage.show();
-
-        } catch (IOException e) {
-            e.printStackTrace();
+        Scene scene = newCustomerButton.getScene();
+        Window window = scene.getWindow();
+        Stage stage = (Stage) window;
         }
-    }
 }
