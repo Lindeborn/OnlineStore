@@ -24,6 +24,6 @@
                 <Font size="18.0" />
             </font>
         </Label>
-      <Button fx:id="newCustomerButton" layoutX="235.0" layoutY="245.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Register new user" />
+      <Button fx:id="newCustomerButton" layoutX="235.0" layoutY="245.0" mnemonicParsing="false" onAction="#createAccountForm" prefHeight="27.0" prefWidth="150.0" text="Register new user" />
     </children>
 </AnchorPane>
