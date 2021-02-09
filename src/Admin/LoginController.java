@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -18,7 +19,7 @@ public class LoginController {
     public TextField usernameTxtF;
     public Button signinBTN;
     public Label loginMessageLabel;
-
+    public Button cancelBTN;
 
 
     public void loginButtonAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
@@ -52,4 +53,9 @@ public class LoginController {
             e.getCause();
         }
         }
+
+    public void CancelButtonAction(ActionEvent actionEvent) {
+    Stage stage = (Stage) cancelBTN.getScene().getWindow();
+    stage.close();
+    }
 }
