@@ -1,23 +1,17 @@
 package customer;
 
 import Admin.SqlServerConnection;
-import javafx.embed.swing.JFXPanel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class LoginCustomerController {
     public PasswordField passwordTxF;
@@ -39,7 +33,26 @@ public class LoginCustomerController {
         SqlServerConnection ConnectNow = new SqlServerConnection();
         Connection connectionDB = ConnectNow.connect();
 
-        String verifyLogin  = "Select " + usernameTxtF.getText();
+        Statement statement = connectionDB.createStatement();
+
+        try {
+            PreparedStatement ps = connectionDB.prepareStatement("SELECT Email, Password FROM Email WHERE Email = ? AND Password = ?");
+            ps.setString(1, usernameTxtF.getText());
+            ps.setString(2, passwordTxF.getText());
+            ResultSet result = ps.executeQuery();
+            if(result.next()){
+                System.out.println("Login Success!");
+            }
+            else{
+                System.out.println("Login Failed.");
+            }
+        } catch (SQLException ex) {
+        }
+
+        statement.executeUpdate("INSERT INTO Email " + "VALUES ('" + usernameTxtF.getText() + "', " + "'" + passwordTxF.getText() + "')");
+        connectionDB.close();
+
+        /*String verifyLogin  = "Select " + usernameTxtF.getText() ;
 
         try{
             Statement statement = connectionDB.createStatement();
@@ -54,17 +67,15 @@ public class LoginCustomerController {
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-        }
+        }*/
 
     }
     public void createAccountForm(ActionEvent event) throws IOException {
-        Scene scenes = newCustomerButton.getScene();
-        Window window = scenes.getWindow();
-        Stage stages = (Stage) window;
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("RegisterNewCostumer.fxml")); // create and load() view
         Stage stage = (Stage) newCustomerButton.getScene().getWindow();
-        Scene scene = new Scene(loader.getRoot());
+        Parent root = FXMLLoader.load(getClass().getResource("RegisterNewCustomer.fxml"));
+
+        Scene scene = new Scene(root, 600, 400);
         stage.setScene(scene);
+        stage.show();
     }
 }
