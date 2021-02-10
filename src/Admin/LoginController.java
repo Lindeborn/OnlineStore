@@ -1,17 +1,23 @@
 package Admin;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import javax.swing.*;
+import java.io.File;
+import java.net.URL;
 import java.sql.*;
+import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
-public class LoginController {
+public class LoginController implements Initializable {
 
 
     public PasswordField passwordTxF;
@@ -19,6 +25,7 @@ public class LoginController {
     public Button signinBTN;
     public Label loginMessageLabel;
     public Button cancelBTN;
+    public ImageView shieldImangeView;
 
 
     public void loginButtonAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
@@ -75,5 +82,12 @@ public class LoginController {
     public void CancelButtonAction(ActionEvent actionEvent) {
     Stage stage = (Stage) cancelBTN.getScene().getWindow();
     stage.close();
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        File shieldFile = new File("Images/key.png");
+        Image shieldImange = new Image(shieldFile.toURI().toString());
+        shieldImangeView.setImage(shieldImange);
     }
 }
