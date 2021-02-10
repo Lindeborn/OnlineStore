@@ -1,5 +1,6 @@
 package customer;
 
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -36,12 +37,16 @@ public class RegisterController {
 
     public RegisterController(LoginCustomerController lgCustomer){
         this.lgCustomer = lgCustomer;
+        
+        //ComboBox<Countries> countryCombobox = new ComboBox<>();
+        countryCombobox.setItems( FXCollections.observableArrayList( Countries.values()));
+        countryCombobox.getItems().setAll(Countries.values());
     }
 
     public void registerActionEvent(ActionEvent actionEvent) throws SQLException {
-        //newUserLBL.setText("User has been registered successfully");
+        newUserLBL.setText("User has been registered successfully");
         lgCustomer.registerCustomer();
-        //registerUser();
+        registerUser();
 
     }
 

@@ -13,7 +13,7 @@
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="129.0" style="-fx-background-color: lightblue;" />
       <Button fx:id="signinBTN" layoutX="226.0" layoutY="274.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: lightgreen;" text="SIGN IN" />
       <PasswordField fx:id="passwordTxF" layoutX="215.0" layoutY="200.0" prefHeight="27.0" prefWidth="190.0" promptText="Password" />
-      <Label layoutX="209.0" layoutY="67.0" prefHeight="52.0" prefWidth="246.0" text="Welcome">
+      <Label layoutX="209.0" layoutY="53.0" prefHeight="66.0" prefWidth="287.0" text="Welcome">
          <font>
             <Font size="42.0" />
          </font>

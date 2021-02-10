@@ -42,10 +42,10 @@ public class LoginController {
                 ps.setString(2, passwordTxF.getText());
                 ResultSet result = ps.executeQuery();
                 if(result.next()){
-                    System.out.println("Login Success!");
+                    loginMessageLabel.setText("Congratulations!");
                 }
                 else{
-                    System.out.println("Login Failed.");
+                    loginMessageLabel.setText("Invalid login");
                 }
             } catch (SQLException ex) {
             }
