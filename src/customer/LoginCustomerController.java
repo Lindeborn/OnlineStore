@@ -20,12 +20,14 @@ public class LoginCustomerController {
     public Button newCustomerButton;
     public SqlServerConnection ConnectNow;
     public Connection connectionDB;
-    public RegisterController reg = new RegisterController();
+    public RegisterController reg;
 
 
     public LoginCustomerController() throws SQLException, ClassNotFoundException {
         ConnectNow = new SqlServerConnection();
         connectionDB = ConnectNow.connect();
+
+        reg = new RegisterController(this);
     }
 
     public void loginButtonAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {

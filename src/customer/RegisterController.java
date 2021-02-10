@@ -32,20 +32,16 @@ public class RegisterController {
     public Label newUserLBL;
 
     public Label confirmPWLBL;
-    public LoginCustomerController lgController;
+    public LoginCustomerController lgCustomer;
 
-    public RegisterController(LoginCustomerController lgController){
-        this.lgController = lgController;
-    }
-
-    public RegisterController() {
-
+    public RegisterController(LoginCustomerController lgCustomer){
+        this.lgCustomer = lgCustomer;
     }
 
     public void registerActionEvent(ActionEvent actionEvent) throws SQLException {
-        newUserLBL.setText("User has been registered successfully");
-        lgController.registerCustomer();
-        registerUser();
+        //newUserLBL.setText("User has been registered successfully");
+        lgCustomer.registerCustomer();
+        //registerUser();
 
     }
 
