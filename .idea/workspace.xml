@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="802df805-d9f3-41ae-ab51-be65e5ab026d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/Countries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/RegisterController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/RegisterNewCustomer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/customer/LoginCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/customer/LoginCustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/customer/RegisterNewCostumer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/customer/RegisterNewCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/LoginCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/LoginCustomerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.Main" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$PROJECT_DIR$/../../../../Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />
@@ -77,7 +77,7 @@
     <configuration name="MainAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Admin.MainAdmin" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$PROJECT_DIR$/../../../../Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Admin.*" />
@@ -91,7 +91,7 @@
     <configuration name="MainCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="customer.MainCustomer" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$PROJECT_DIR$/../../../../Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />
@@ -105,7 +105,7 @@
     <configuration name="SqlServerConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Admin.SqlServerConnection" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$PROJECT_DIR$/../../../../Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />
@@ -131,7 +131,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
