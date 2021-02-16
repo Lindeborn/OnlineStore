@@ -11,24 +11,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.RegisterController">
    <children>
-      <Pane prefHeight="400.0" prefWidth="173.0" style="-fx-background-color: lightblue;" />
-      <TextField fx:id="firstnameTextfield" layoutX="191.0" layoutY="120.0" promptText="Firstname" />
-      <TextField fx:id="mailTextfield" layoutX="191.0" layoutY="163.0" promptText="E-mail" />
-      <TextField fx:id="cityTextfield" layoutX="380.0" layoutY="207.0" promptText="City" />
-      <TextField fx:id="numberTextfield" layoutX="191.0" layoutY="248.0" promptText="Phonenumber" />
-      <TextField fx:id="lastnameTextfield" layoutX="380.0" layoutY="120.0" promptText="Lastname" />
-      <TextField fx:id="addressTextfield" layoutX="380.0" layoutY="163.0" promptText="Address" />
-      <ComboBox fx:id="countryCombobox" layoutX="191.0" layoutY="207.0" prefHeight="27.0" prefWidth="161.0" promptText="Country" />
-      <Label layoutX="191.0" layoutY="36.0" prefHeight="55.0" prefWidth="181.0" text="Register" textFill="#49adeb">
-         <font>
-            <Font size="26.0" />
-         </font>
-      </Label>
-      <Button fx:id="registerButton" layoutX="417.0" layoutY="339.0" mnemonicParsing="false" onAction="#registerActionEvent" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: lightgreen;" text="Register" />
-      <Button fx:id="clearAllBTN" layoutX="229.0" layoutY="333.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: lightgrey;" text="Cler all" />
-      <PasswordField fx:id="setPasswordTextfield" layoutX="191.0" layoutY="286.0" />
-      <PasswordField fx:id="passwordTextfield1" layoutX="380.0" layoutY="286.0" />
-      <Label layoutX="191.0" layoutY="81.0" prefHeight="27.0" prefWidth="257.0" text="Register new customer" textFill="#0a0a0a" />
-      <Label fx:id="confirmPWLBL" layoutX="380.0" layoutY="262.0" prefHeight="27.0" prefWidth="161.0" textFill="#01eb0d" />
+
    </children>
 </AnchorPane>
