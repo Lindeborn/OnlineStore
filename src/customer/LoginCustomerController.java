@@ -27,7 +27,7 @@ public class LoginCustomerController {
         ConnectNow = new SqlServerConnection();
         connectionDB = ConnectNow.connect();
 
-        reg = new RegisterController(this);
+        //reg = new RegisterController(this);
     }
 
     public void loginButtonAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {

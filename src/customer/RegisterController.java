@@ -35,13 +35,7 @@ public class RegisterController {
     public Label confirmPWLBL;
     public LoginCustomerController lgCustomer;
 
-    public RegisterController(LoginCustomerController lgCustomer){
-        this.lgCustomer = lgCustomer;
-        
-        //ComboBox<Countries> countryCombobox = new ComboBox<>();
-        countryCombobox.setItems( FXCollections.observableArrayList( Countries.values()));
-        countryCombobox.getItems().setAll(Countries.values());
-    }
+
 
     public void registerActionEvent(ActionEvent actionEvent) throws SQLException {
         newUserLBL.setText("User has been registered successfully");
