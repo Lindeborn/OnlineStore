@@ -20,11 +20,8 @@ public class LoginController {
     public Label loginMessageLabel;
     public Button cancelBTN;
 
-    public LoginController() throws SQLException, ClassNotFoundException {
-        SqlServerConnection ConnectNow = new SqlServerConnection();
-        Connection connectionDB = ConnectNow.connect();
-        Statement statement = connectionDB.createStatement();
-    }
+
+    
 
 
     public void loginButtonAction(ActionEvent actionEvent) throws IOException {
