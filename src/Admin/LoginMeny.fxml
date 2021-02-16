@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -18,7 +17,6 @@
                   <Font size="42.0" />
                </font>
             </Label>
-            <ImageView fx:id="shieldImangeView" fitHeight="83.0" fitWidth="87.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
          </children></Pane>
       <Button fx:id="signinBTN" layoutX="246.0" layoutY="274.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="29.0" prefWidth="100.0" text="SIGN IN" />
       <PasswordField fx:id="passwordTxF" layoutX="201.0" layoutY="234.0" prefHeight="27.0" prefWidth="190.0" promptText="Password" />
