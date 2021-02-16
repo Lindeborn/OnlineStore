@@ -31,13 +31,12 @@ public class LoginCustomerController {
     public void loginButtonAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
         if (!usernameTxtF.getText().isBlank() && !passwordTxF.getText().isBlank()) {
             validateLogin();
-
         } else {
             //loginMessageLabel.setText("Please enter username or password");
         }
     }
 
-    public void validateLogin() throws SQLException, ClassNotFoundException {
+    public void validateLogin() {
         try {
             PreparedStatement ps = connectionDB.prepareStatement("SELECT Email, Password FROM Customer WHERE Email = ? AND Password = ?");
             ps.setString(1, usernameTxtF.getText());
@@ -58,7 +57,7 @@ public class LoginCustomerController {
         }
     }
 
-    public void createAccountForm(ActionEvent event) throws IOException, SQLException {
+    public void createAccountForm(ActionEvent event) throws IOException {
         Stage stage = (Stage) newCustomerButton.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("RegisterNewCustomer.fxml"));
 

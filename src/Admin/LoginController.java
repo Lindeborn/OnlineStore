@@ -1,6 +1,5 @@
 package Admin;
 
-import customer.LoginCustomerController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 
