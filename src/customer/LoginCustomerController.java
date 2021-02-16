@@ -26,8 +26,6 @@ public class LoginCustomerController {
     public LoginCustomerController() throws SQLException, ClassNotFoundException {
         ConnectNow = new SqlServerConnection();
         connectionDB = ConnectNow.connect();
-
-        //reg = new RegisterController(this);
     }
 
     public void loginButtonAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
@@ -62,20 +60,5 @@ public class LoginCustomerController {
         Scene scene = new Scene(root, 600, 400);
         stage.setScene(scene);
         stage.show();
-    }
-
-    public void registerCustomer() throws SQLException {
-        Statement statement = connectionDB.createStatement();
-        statement.executeUpdate("INSERT INTO Customer "
-                + "VALUES ('" + reg.mailTextfield.getText()
-                + "', '" + reg.numberTextfield.getText()
-                + "', '" + reg.firstnameTextfield.getText()
-                + "', '" + reg.lastnameTextfield.getText()
-                + "', '" + reg.addressTextfield.getText()
-                + "', '" + reg.countryCombobox.getValue().toString()
-                + "', '" + reg.cityTextfield.getText()
-                + "', '" + reg.setPasswordTextfield.getText()
-                + "')");
-        connectionDB.close();
     }
 }

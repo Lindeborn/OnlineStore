@@ -25,10 +25,10 @@
                </font>
             </Label>
             <Button fx:id="registerButton" layoutX="417.0" layoutY="339.0" mnemonicParsing="false" onAction="#registerActionEvent" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: lightgreen;" text="Register" />
-            <Button fx:id="clearAllBTN" layoutX="229.0" layoutY="333.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: lightgrey;" text="Cler all" />
-            <PasswordField fx:id="setPasswordTextfield" layoutX="191.0" layoutY="286.0" />
-            <PasswordField fx:id="passwordTextfield1" layoutX="380.0" layoutY="286.0" />
-            <Label layoutX="191.0" layoutY="81.0" prefHeight="27.0" prefWidth="257.0" text="Register new customer" textFill="#0a0a0a" />
+            <Button fx:id="clearAllBTN" layoutX="229.0" layoutY="333.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: lightgrey;" text="Clear all" />
+            <PasswordField fx:id="setPasswordTextfield" layoutX="191.0" layoutY="286.0" promptText="Password" />
+            <PasswordField fx:id="passwordTextfield1" layoutX="380.0" layoutY="286.0" promptText="Reenter  password" />
+            <Label fx:id="newUserLBL" layoutX="191.0" layoutY="81.0" prefHeight="27.0" prefWidth="257.0" text="Register new customer" textFill="#0a0a0a" />
             <Label fx:id="confirmPWLBL" layoutX="380.0" layoutY="262.0" prefHeight="27.0" prefWidth="161.0" textFill="#01eb0d" />
    </children>
 </AnchorPane>

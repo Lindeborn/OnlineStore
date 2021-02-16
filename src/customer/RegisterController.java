@@ -1,5 +1,6 @@
 package customer;
 
+import Admin.SqlServerConnection;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,7 +11,9 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 
 public class RegisterController {
@@ -38,12 +41,17 @@ public class RegisterController {
     public Label newUserLBL;
 
     public Label confirmPWLBL;
-    public LoginCustomerController lgCustomer;
 
+    private SqlServerConnection ConnectNow;
+    private Connection connectionDB;
 
+    public RegisterController() throws SQLException, ClassNotFoundException {
+        ConnectNow = new SqlServerConnection();
+        connectionDB = ConnectNow.connect();
+    }
 
     public void registerActionEvent(ActionEvent actionEvent) throws SQLException, IOException {
-        lgCustomer.registerCustomer();
+        registerCustomer();
         registerUser();
 
     }
@@ -73,5 +81,20 @@ public class RegisterController {
         cityTextfield.setText("");
         countryCombobox.setButtonCell(null);
         setPasswordTextfield.setText("");
+    }
+
+    public void registerCustomer() throws SQLException {
+        Statement statement = connectionDB.createStatement();
+        statement.executeUpdate("INSERT INTO Customer "
+                + "VALUES ('" + mailTextfield.getText()
+                + "', '" + numberTextfield.getText()
+                + "', '" + firstnameTextfield.getText()
+                + "', '" + lastnameTextfield.getText()
+                + "', '" + addressTextfield.getText()
+                + "', '" + countryCombobox.getValue().toString()
+                + "', '" + cityTextfield.getText()
+                + "', '" + setPasswordTextfield.getText()
+                + "')");
+        connectionDB.close();
     }
 }
