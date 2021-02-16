@@ -8,18 +8,17 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.ShopController">
    <children>
-      <ListView layoutX="102.0" layoutY="51.0" prefHeight="298.0" prefWidth="315.0" />
+      <ListView fx:id="itemsList" layoutX="102.0" layoutY="51.0" prefHeight="298.0" prefWidth="315.0" />
       <Pane prefHeight="400.0" prefWidth="93.0" style="-fx-background-color: lightblue;">
          <children>
             <ImageView fitHeight="52.0" fitWidth="60.0" layoutX="17.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>
-      <Button layoutX="134.0" layoutY="359.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="99.0" text="Add" />
-      <Button layoutX="264.0" layoutY="359.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="99.0" text="Remove" />
-      <ListView layoutX="431.0" layoutY="77.0" prefHeight="247.0" prefWidth="144.0" />
+      <Button fx:id="addButton" layoutX="134.0" layoutY="359.0" mnemonicParsing="false" onAction="#addAction" prefHeight="27.0" prefWidth="99.0" text="Add" />
+      <Button fx:id="removeButton" layoutX="264.0" layoutY="359.0" mnemonicParsing="false" onAction="#removeAction" prefHeight="27.0" prefWidth="99.0" text="Remove" />
+      <ListView fx:id="basketList" layoutX="431.0" layoutY="77.0" prefHeight="247.0" prefWidth="144.0" />
       <Label layoutX="435.0" layoutY="40.0" prefHeight="27.0" prefWidth="136.0" text="Shopping cart">
          <font>
             <Font size="15.0" />
@@ -30,6 +29,6 @@
             <Font size="26.0" />
          </font>
       </Label>
-      <Button layoutX="466.0" layoutY="337.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="75.0" text="Edit" />
+      <Button fx:id="editButton" layoutX="466.0" layoutY="337.0" mnemonicParsing="false" onAction="#editAction" prefHeight="27.0" prefWidth="75.0" text="Edit" />
    </children>
 </AnchorPane>
