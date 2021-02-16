@@ -1,5 +1,6 @@
 package Admin;
 
+import customer.LoginCustomerController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 
@@ -19,10 +20,13 @@ public class LoginController {
     public Button signinBTN;
     public Label loginMessageLabel;
     public Button cancelBTN;
+    private Connection connectionDB;
+    private SqlServerConnection ConnectNow;
 
-
-    
-
+    public LoginController() throws SQLException, ClassNotFoundException {
+        ConnectNow = new SqlServerConnection();
+        connectionDB = ConnectNow.connect();
+    }
 
     public void loginButtonAction(ActionEvent actionEvent) throws IOException {
         if ((usernameTxtF.getText().equals("Admin")) && (passwordTxF.getText().equals("Admin123"))) {
