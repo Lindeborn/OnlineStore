@@ -31,7 +31,7 @@ public class LoginCustomerController {
     public void loginButtonAction(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
         if (!usernameTxtF.getText().isBlank() && !passwordTxF.getText().isBlank()) {
             validateLogin();
-            //loginMessageLabel.setText("login");
+
         } else {
             //loginMessageLabel.setText("Please enter username or password");
         }
@@ -45,11 +45,16 @@ public class LoginCustomerController {
             ResultSet result = ps.executeQuery();
             if(result.next()){
                 System.out.println("Login Success!");
+                Stage stage = (Stage) signinBTN.getScene().getWindow();
+                Parent root = FXMLLoader.load(getClass().getResource("ShopCustomer.fxml"));
+                Scene scene = new Scene(root, 600, 400);
+                stage.setScene(scene);
+                stage.show();
             }
             else{
                 System.out.println("Login Failed.");
             }
-        } catch (SQLException ex) {
+        } catch (SQLException | IOException ex) {
         }
     }
 
