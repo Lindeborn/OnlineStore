@@ -2,6 +2,7 @@ package customer;
 
 import Admin.SqlServerConnection;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,7 +33,7 @@ public class RegisterController {
     @FXML
     public TextField cityTextfield;
     @FXML
-    public ComboBox countryCombobox;
+    public ComboBox<String> countryCombobox;
     @FXML
     public PasswordField setPasswordTextfield;
     public PasswordField passwordTextfield1;
@@ -45,9 +46,11 @@ public class RegisterController {
     private SqlServerConnection ConnectNow;
     private Connection connectionDB;
 
+
     public RegisterController() throws SQLException, ClassNotFoundException {
         ConnectNow = new SqlServerConnection();
         connectionDB = ConnectNow.connect();
+
     }
 
     public void registerActionEvent(ActionEvent actionEvent) throws SQLException, IOException {
@@ -59,6 +62,7 @@ public class RegisterController {
     private void registerUser() throws IOException {
         if (setPasswordTextfield.getText().equals(passwordTextfield1.getText())){
             System.out.println("you are set");
+
             Stage stage = (Stage) registerButton.getScene().getWindow();
             Parent root = FXMLLoader.load(getClass().getResource("ShopCustomer.fxml"));
 
@@ -83,6 +87,15 @@ public class RegisterController {
         setPasswordTextfield.setText("");
     }
 
+    public void initialize(){
+        ObservableList<String> countries = FXCollections.observableArrayList(
+                "Sweden", "Norway", "Denmark", "Finland"
+        );
+
+        countryCombobox.setItems(countries);
+        countryCombobox.getSelectionModel().selectFirst();
+    }
+
 
     public void registerCustomer() throws SQLException {
         Statement statement = connectionDB.createStatement();
@@ -92,16 +105,10 @@ public class RegisterController {
                 + "', '" + firstnameTextfield.getText()
                 + "', '" + lastnameTextfield.getText()
                 + "', '" + addressTextfield.getText()
-                + "', '" + countryCombobox.getValue().toString()
+                + "', '" + countryCombobox.getValue()
                 + "', '" + cityTextfield.getText()
                 + "', '" + setPasswordTextfield.getText()
                 + "')");
         connectionDB.close();
-    }
-
-    public void countryCombobox(ActionEvent actionEvent) {
-        countryCombobox.setItems( FXCollections.observableArrayList( Countries.values()));
-        countryCombobox.getItems().setAll(Countries.values());
-
     }
 }
