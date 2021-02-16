@@ -83,6 +83,7 @@ public class RegisterController {
         setPasswordTextfield.setText("");
     }
 
+
     public void registerCustomer() throws SQLException {
         Statement statement = connectionDB.createStatement();
         statement.executeUpdate("INSERT INTO Customer "
@@ -96,5 +97,11 @@ public class RegisterController {
                 + "', '" + setPasswordTextfield.getText()
                 + "')");
         connectionDB.close();
+    }
+
+    public void countryCombobox(ActionEvent actionEvent) {
+        countryCombobox.setItems( FXCollections.observableArrayList( Countries.values()));
+        countryCombobox.getItems().setAll(Countries.values());
+
     }
 }
