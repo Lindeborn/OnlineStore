@@ -22,10 +22,7 @@ public class LoginController {
     private Connection connectionDB;
     private SqlServerConnection ConnectNow;
 
-    public LoginController() throws SQLException, ClassNotFoundException {
-        ConnectNow = new SqlServerConnection();
-        connectionDB = ConnectNow.connect();
-    }
+   
 
     public void loginButtonAction(ActionEvent actionEvent) throws IOException {
         if ((usernameTxtF.getText().equals("Admin")) && (passwordTxF.getText().equals("Admin123"))) {
