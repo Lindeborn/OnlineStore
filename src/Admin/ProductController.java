@@ -8,9 +8,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ResourceBundle;
 
 public class ProductController implements Initializable {
@@ -60,11 +58,12 @@ public class ProductController implements Initializable {
     @FXML
     //TODO remove from databas
     //Här removar vi objektet från table
-    public void deleteAction(ActionEvent actionEvent) {
+    public void deleteAction(ActionEvent actionEvent) throws SQLException {
         ObservableList<Product> allProducts, singleProducts;
         allProducts = productView.getItems();
         singleProducts=productView.getSelectionModel().getSelectedItems();
         singleProducts.forEach(allProducts::remove);
+        deleteProduct();
 
     }
     @Override
@@ -89,6 +88,17 @@ public class ProductController implements Initializable {
         registerProduct();
 
 
+    }
+
+
+    public void deleteProduct()throws SQLException {
+        try {
+            PreparedStatement st = connectionDB.prepareStatement("DELETE FROM Table WHERE name = ?");
+            st.setString(1, "");
+            st.executeUpdate();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
     //TODO insert into productregister databas
