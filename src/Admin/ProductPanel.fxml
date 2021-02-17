@@ -62,15 +62,15 @@
       <Button fx:id="editButton" layoutX="564.0" layoutY="346.0" mnemonicParsing="false" onAction="#editAction" prefHeight="27.0" prefWidth="59.0" text="Edit" />
       <Button fx:id="deleteBTN" layoutX="673.0" layoutY="346.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="27.0" prefWidth="71.0" text="Delete" />
       <Button fx:id="registerBTN" layoutX="276.0" layoutY="359.0" mnemonicParsing="false" onAction="#registerAction" prefHeight="27.0" prefWidth="103.0" style="-fx-background-color: lightgreen;" text="Register" />
-      <TableView fx:id="productTable" layoutX="422.0" layoutY="23.0" prefHeight="315.0" prefWidth="461.0">
+      <TableView fx:id="productView" layoutX="422.0" layoutY="23.0" prefHeight="315.0" prefWidth="461.0">
         <columns>
           <TableColumn fx:id="nameTable" prefWidth="60.0" text="Name" />
-            <TableColumn prefWidth="66.0" text="Number" />
+            <TableColumn fx:id="numberTable" prefWidth="66.0" text="Number" />
           <TableColumn fx:id="priceTable" prefWidth="62.0" text="Price" />
             <TableColumn fx:id="supplierTable" prefWidth="63.0" text="Supplier" />
-            <TableColumn prefWidth="64.0" text="Discount" />
-            <TableColumn prefWidth="90.0" text="Description" />
-            <TableColumn prefWidth="60.0" text="Type" />
+            <TableColumn fx:id="discountTable" prefWidth="64.0" text="Discount" />
+            <TableColumn fx:id="descritionTable" prefWidth="90.0" text="Description" />
+            <TableColumn fx:id="typeTable" prefWidth="60.0" text="Type" />
         </columns>
       </TableView>
    </children>

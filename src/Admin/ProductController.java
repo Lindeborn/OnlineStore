@@ -1,14 +1,19 @@
 package Admin;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ResourceBundle;
 
-public class ProductController {
+public class ProductController implements Initializable {
     @FXML
     public TextField priceTextfield;
     @FXML
@@ -31,9 +36,13 @@ public class ProductController {
     public Button registerBTN;
     @FXML
     public TableView <Product>productView;
-    public TableColumn nameTable;
-    public TableColumn priceTable;
-    public TableColumn supplierTable;
+    public TableColumn <Product, String>nameTable;
+    public TableColumn <Product, String>priceTable;
+    public TableColumn <Product, String>supplierTable;
+    public TableColumn <Product, String>numberTable;
+    public TableColumn <Product, String>discountTable;
+    public TableColumn <Product, String>descritionTable;
+    public TableColumn <Product, String>typeTable;
     private SqlServerConnection ConnectNow;
     private Connection connectionDB;
 
@@ -49,20 +58,33 @@ public class ProductController {
     }
 
     @FXML
+    //TODO remove from databas
+    //Här removar vi objektet från table
     public void deleteAction(ActionEvent actionEvent) {
+        ObservableList<Product> allProducts, singleProducts;
+        allProducts = productView.getItems();
+        singleProducts=productView.getSelectionModel().getSelectedItems();
+        singleProducts.forEach(allProducts::remove);
+
+    }
+    @Override
+
+    //TODO lägga till dessa i databasen också, se registerproduct() metoden om det funkar?
+    public void initialize(URL url, ResourceBundle rb) {
+        nameTable.setCellValueFactory(new PropertyValueFactory<>("productname"));
+        numberTable.setCellValueFactory(new PropertyValueFactory<>("productnumber"));
+        priceTable.setCellValueFactory(new PropertyValueFactory<>("productprice"));
+        supplierTable.setCellValueFactory(new PropertyValueFactory<>("supplier"));
+        discountTable.setCellValueFactory(new PropertyValueFactory<>("discount"));
+        descritionTable.setCellValueFactory(new PropertyValueFactory<>("description"));
+        typeTable.setCellValueFactory(new PropertyValueFactory<>("productType"));
 
     }
 
     @FXML
     public void registerAction(ActionEvent actionEvent) throws SQLException {
-        String name = productnamenTXF.getText();
-        String number = productNumberTXTF.getText();
-        String price = priceTextfield.getText();
-        String supplier = supplierTextfield.getText();
-        String discount = discountTextfield.getText();
-        String description = descriptionTextfield.getText();
-        String produktType = productTextfield.getText();
-        Product product = new Product(name, number, price, supplier, discount, description, produktType);
+        Product product = new Product(productnamenTXF.getText(), Integer.parseInt(productNumberTXTF.getText()), Double.parseDouble(priceTextfield.getText()),supplierTextfield.getText(),
+                Double.parseDouble(discountTextfield.getText()), descriptionTextfield.getText(), productTextfield.getText());
         productView.getItems().add(product);
         registerProduct();
 
@@ -70,7 +92,7 @@ public class ProductController {
     }
 
     //TODO insert into productregister databas
-        public void registerProduct() throws SQLException {
+       public void registerProduct() throws SQLException {
             Statement statement = connectionDB.createStatement();
             statement.executeUpdate("INSERT INTO product "
                     + "VALUES ('" + productnamenTXF.getText()
