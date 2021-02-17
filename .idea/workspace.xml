@@ -20,10 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="802df805-d9f3-41ae-ab51-be65e5ab026d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Admin/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/customer/LoginCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/customer/LoginCustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/customer/RegisterNewCostumer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/customer/RegisterNewCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/LoginCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/LoginCustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Admin/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Admin/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Admin/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Admin/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnlineStore/Admin/ProductPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineStore/Admin/ProductPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin/ProductPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/ProductPanel.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +63,11 @@
       <recent name="$PROJECT_DIR$/src/Controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainCustomer">
+  <component name="RunManager" selected="Application.MainAdmin">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.Main" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$PROJECT_DIR$/../../../../Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />
@@ -77,7 +81,7 @@
     <configuration name="MainAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Admin.MainAdmin" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Admin.*" />
@@ -91,7 +95,7 @@
     <configuration name="MainCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="customer.MainCustomer" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$USER_HOME$/Desktop/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />
@@ -105,7 +109,7 @@
     <configuration name="SqlServerConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Admin.SqlServerConnection" />
       <module name="OnlineStore" />
-      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;/Users/Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
+      <option name="VM_PARAMETERS" value="--upgrade-module-path &quot;$PROJECT_DIR$/../../../../Lanna/Downloads/openjfx-15.0.1_windows-x64_bin-sdk/javafx-sdk-15.0.1/lib&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />
@@ -124,14 +128,14 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainCustomer" />
         <item itemvalue="Application.MainAdmin" />
+        <item itemvalue="Application.MainCustomer" />
         <item itemvalue="Application.SqlServerConnection" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -156,51 +160,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="392" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612892530321">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="392" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1612892530321" />
-    <state width="1493" height="242" key="GridCell.Tab.0.bottom" timestamp="1612907275220">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="242" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612907275220" />
-    <state width="1493" height="242" key="GridCell.Tab.0.center" timestamp="1612907275219">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="242" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612907275219" />
-    <state width="1493" height="242" key="GridCell.Tab.0.left" timestamp="1612907275218">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="242" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612907275218" />
-    <state width="1493" height="242" key="GridCell.Tab.0.right" timestamp="1612907275219">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="242" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612907275219" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1612904229964">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612904229964" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1612904229963">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1612904229963" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1612904229963">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1612904229963" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1612904229964">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612904229964" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1612892988406">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612892988406" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1612897467622">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1612897467622" />
   </component>
 </project>

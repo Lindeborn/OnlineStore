@@ -22,13 +22,13 @@ public class LoginController {
     private Connection connectionDB;
     private SqlServerConnection ConnectNow;
 
-   
+
 
     public void loginButtonAction(ActionEvent actionEvent) throws IOException {
         if ((usernameTxtF.getText().equals("Admin")) && (passwordTxF.getText().equals("Admin123"))) {
             Stage stage = (Stage) signinBTN.getScene().getWindow();
             Parent root = FXMLLoader.load(getClass().getResource("ProductPanel.fxml"));
-            Scene scene = new Scene(root, 600, 400);
+            Scene scene = new Scene(root, 900, 400);
             stage.setScene(scene);
             stage.show();
         }else if (usernameTxtF.getText().isBlank() || passwordTxF.getText().isBlank()) {
