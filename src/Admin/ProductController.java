@@ -90,7 +90,7 @@ public class ProductController implements Initializable {
 
     }
 
-
+    //TODO denna metod funkar nog inte, att ta bort från databasen
     public void deleteProduct()throws SQLException {
         try {
             PreparedStatement st = connectionDB.prepareStatement("DELETE FROM Table WHERE name = ?");
