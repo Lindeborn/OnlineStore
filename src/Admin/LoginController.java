@@ -17,7 +17,7 @@ public class LoginController {
     public PasswordField passwordTxF;
     public TextField usernameTxtF;
     public Button signinBTN;
-    public Label loginMessageLabel;
+    public Label loginMessageLabel = new Label();
     public Button cancelBTN;
     private Connection connectionDB;
     private SqlServerConnection ConnectNow;
@@ -25,7 +25,7 @@ public class LoginController {
 
 
     public void loginButtonAction(ActionEvent actionEvent) throws IOException {
-        if ((usernameTxtF.getText().equals("Admin")) && (passwordTxF.getText().equals("Admin123"))) {
+        if ((usernameTxtF.getText().equals("SA")) && (passwordTxF.getText().equals("Karlstad92"))) {
             Stage stage = (Stage) signinBTN.getScene().getWindow();
             Parent root = FXMLLoader.load(getClass().getResource("ProductPanel.fxml"));
             Scene scene = new Scene(root, 900, 400);

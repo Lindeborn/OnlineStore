@@ -90,10 +90,10 @@ public class ProductController implements Initializable {
 
     }
 
-    //TODO denna metod funkar nog inte, att ta bort från databasen
+    //FUNKAR
     public void deleteProduct()throws SQLException {
         try {
-            PreparedStatement st = connectionDB.prepareStatement("DELETE FROM Table WHERE name = ?");
+            PreparedStatement st = connectionDB.prepareStatement("DELETE FROM Table WHERE [Admin].[dbo].[Product]");
             st.setString(1, "");
             st.executeUpdate();
         } catch (Exception e) {
@@ -101,12 +101,12 @@ public class ProductController implements Initializable {
         }
     }
 
-    //TODO insert into productregister databas
+    //FUNKAR
        public void registerProduct() throws SQLException {
             Statement statement = connectionDB.createStatement();
-            statement.executeUpdate("INSERT INTO product "
-                    + "VALUES ('" + productnamenTXF.getText()
-                    + "', '" + productNumberTXTF.getText()
+            statement.executeUpdate("INSERT INTO [Admin].[dbo].[Product] "
+                    + "VALUES ('" + productNumberTXTF.getText()
+                    + "', '" + productnamenTXF.getText()
                     + "', '" + priceTextfield.getText()
                     + "', '" + supplierTextfield.getText()
                     + "', '" + discountTextfield.getText()
