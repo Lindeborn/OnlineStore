@@ -101,7 +101,7 @@ public class ProductController implements Initializable {
         }
     }
 
-    //FUNKAR
+    //FUNKAR se till att allt stämmer överrens med ordningen i databasen!!!
        public void registerProduct() throws SQLException {
             Statement statement = connectionDB.createStatement();
             statement.executeUpdate("INSERT INTO [Admin].[dbo].[Product] "
